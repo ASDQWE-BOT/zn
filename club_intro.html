@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>社团活动介绍 · 风息口琴社</title>
+<meta name="description" content="风息口琴社活动介绍：一个周三晚上，一次完整的排练。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B141B'/%3E%3Crect x='7' y='23' width='50' height='18' rx='2' fill='%23C79A4E'/%3E%3Crect x='12' y='27' width='6' height='10' fill='%230B141B'/%3E%3Crect x='22' y='27' width='6' height='10' fill='%230B141B'/%3E%3Crect x='32' y='27' width='6' height='10' fill='%230B141B'/%3E%3Crect x='42' y='27' width='6' height='10' fill='%230B141B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link rel="preconnect" href="https://sf3-scmcdn-cn.feishucdn.com" crossorigin>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@500;700&amp;display=swap">
+<style>
+:root{
+  --night:#0B141B;
+  --line:rgba(199,154,78,.22);
+  --brass:#C79A4E;
+  --brass-soft:#E6BC72;
+  --text:#E3DDD0;
+  --muted:#8F9DA3;
+  --muted-2:#B4BCBB;
+  --serif:"Noto Serif SC","Songti SC","SimSun",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:rgba(199,154,78,.35);color:#fff}
+a:focus-visible{outline:2px solid var(--brass-soft);outline-offset:3px}
+.top{border-bottom:1px solid var(--line);padding:20px 24px}
+.top-in{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px}
+.top-in .brand{font-family:var(--serif);font-size:15px;letter-spacing:.1em;color:#EFE6D2}
+.back{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 16px;font-size:13.5px;color:var(--muted-2);text-decoration:none;border:1px solid rgba(199,154,78,.32);border-radius:2px;transition:.18s}
+.back:hover{color:var(--brass-soft);border-color:var(--brass);background:rgba(199,154,78,.1)}
+main{max-width:960px;margin:0 auto;padding:64px 24px 40px}
+.kicker{display:inline-block;margin:0 0 20px;padding-bottom:5px;font-size:12.5px;letter-spacing:.16em;color:var(--brass);border-bottom:1px solid rgba(199,154,78,.45)}
+h1{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(30px,5vw,46px);line-height:1.3;letter-spacing:.06em;color:#F5EFE3}
+.sub{margin:16px 0 0;font-size:16px;line-height:1.9;color:var(--muted-2);max-width:34em}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:40px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{padding:16px 0;border-right:1px solid rgba(199,154,78,.13)}
+.facts div:last-child{border-right:0}
+.facts span{display:block;font-size:12px;letter-spacing:.12em;color:var(--brass);margin-bottom:5px}
+.facts b{font-weight:500;font-size:15px;color:#E9E2D2}
+h2{margin:56px 0 8px;font-family:var(--serif);font-weight:600;font-size:clamp(20px,2.6vw,26px);letter-spacing:.05em;color:#F1E9D9}
+.meta{margin:0 0 22px;font-size:13px;letter-spacing:.06em;color:var(--muted)}
+p.body{margin:0 0 1.15em;font-size:16px;line-height:2.02;color:#D6D0C3;max-width:38em}
+.tl{margin:26px 0 8px;border-top:1px solid var(--line)}
+.tl li{display:grid;grid-template-columns:88px 22px minmax(0,1fr);align-items:start;padding:16px 0;border-bottom:1px solid rgba(199,154,78,.12);list-style:none}
+.tl{list-style:none;padding:0}
+.tl .t{font-size:13.5px;letter-spacing:.06em;color:var(--brass-soft);font-feature-settings:"tnum";padding-top:2px}
+.tl .dot{position:relative;align-self:stretch;min-height:22px}
+.tl .dot i{position:absolute;left:50%;top:6px;width:7px;height:7px;margin-left:-3.5px;background:var(--brass);border-radius:50%}
+.tl .dot::after{content:"";position:absolute;left:50%;top:9px;bottom:-27px;width:1px;background:rgba(199,154,78,.28)}
+.tl li:last-child .dot::after{display:none}
+.tl .what{font-size:15.5px;line-height:1.85;color:#D3CDC0}
+.tl .what b{font-weight:500;color:#F0E8D8}
+.note{margin:44px 0 0;padding-top:26px;border-top:1px solid var(--line);font-size:14px;line-height:1.9;color:var(--muted)}
+.back-foot{margin:46px 0 60px}
+@media (max-width:760px){
+  main{padding:44px 20px 30px}
+  .facts{grid-template-columns:1fr}
+  .facts div{border-right:0;border-bottom:1px solid rgba(199,154,78,.13)}
+  .tl li{grid-template-columns:66px 20px minmax(0,1fr);gap:0 6px}
+  .sub,p.body{font-size:15.5px}
+}
+@media (prefers-reduced-motion:reduce){ .back{transition:none} }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <span class="brand">风息口琴社</span>
+    <a class="back" href="lin-0427-work2.html"><span aria-hidden="true">←</span>返回风息口琴社招新网页</a>
+  </div>
+</div>
+
+<main>
+  <p class="kicker">活动介绍 · 一次排练的完整过程</p>
+  <h1>一个周三晚上，<br>从开门到收琴</h1>
+  <p class="sub">社团的活动听起来很多，其实都长在同一个根上：每周一次的排练。公开课、快闪、录音、汇演，都是把这一天晚上练出来的东西，拿到别的地方再用一次。</p>
+
+  <div class="facts">
+    <div><span>时间</span><b>每周三、周六 19:00</b></div>
+    <div><span>地点</span><b>教学楼 B302 / 音乐教室 A105</b></div>
+    <div><span>时长</span><b>约两小时，演出前加排</b></div>
+  </div>
+
+  <h2>排练的六个时刻</h2>
+  <p class="meta">下面是一个普通周三晚上的时间轴，顺序基本不会变</p>
+  <ul class="tl">
+    <li>
+      <span class="t">18:30</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>开门与试音</b>　先到的人推窗、围椅子、接音箱，各自找一个角落吹一段熟悉的旋律。谁跑调，谁去烧水。</span>
+    </li>
+    <li>
+      <span class="t">19:00</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>长音与单音</b>　两分钟长音起步，从第 4 孔吹到第 5 孔吸，音飘了就重来。这是全场最安静的二十分钟。</span>
+    </li>
+    <li>
+      <span class="t">19:20</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>分声部</b>　十孔组练旋律与压音，复音组练铺底与颤音，半音阶组单独对换调的段落。</span>
+    </li>
+    <li>
+      <span class="t">20:00</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>合练</b>　所有声部拼在一起。最常听见的一句话是「再慢一点」——一快，压音就会糊成一片。</span>
+    </li>
+    <li>
+      <span class="t">20:40</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>试演与复盘</b>　当成台下有人，完整吹一遍；录一段下来，一边听一边改，谁的问题谁认。</span>
+    </li>
+    <li>
+      <span class="t">21:00</span>
+      <span class="dot" aria-hidden="true"><i></i></span>
+      <span class="what"><b>收琴</b>　擦琴、把谱子归位、把椅子推回原位。新成员第一次走的时候，通常会借走一支琴。</span>
+    </li>
+  </ul>
+
+  <h2>这一晚上会长出什么</h2>
+  <p class="body">春天从这一晚上长出公开课：三月的第二场，把「为什么你吹不响」和「为什么你的音总是漏气」一次讲清楚。四月长出快闪：中午十二点半，一号教学楼前，把练熟的曲子放到真实的人流里检验，站在下风口，风会替你把声音送出去。五月长出录音棚体验：第一次听自己的声音从话筒里出来，通常会被吓到——口琴靠的是呼吸和空间，不是音量。</p>
+  <p class="body">六月长出那场汇演。「一口气的夜晚」这个名字是第一届社员取的，最后一个节目永远是全体合奏。二十几个人必须站得很近，因为口琴声音小；散场之后通常还有一场，在活动中心的台阶上，把当晚的曲子再吹一遍，不给任何人听。</p>
+  <p class="body">所以社团的活动介绍，说到底就是一句话：我们每周有一个晚上，认真地练两个小时；然后把这个晚上，重复很多次。</p>
+
+  <p class="note">本页为课程作业演示页面，社团、人物与活动均为虚构。想回到招新主页，点击下方按钮。</p>
+
+  <p class="back-foot"><a class="back" href="lin-0427-work2.html"><span aria-hidden="true">←</span>返回风息口琴社招新网页</a></p>
+</main>
+
+</body>
+</html>
